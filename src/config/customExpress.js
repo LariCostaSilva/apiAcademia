@@ -11,7 +11,7 @@ module.exports = () => {
     const app = express();
     //const port = 3003
     //adicionando bibliotecas a serem usadas
-    app.use(bodyParser.urlencoded({extended: true}));
+    app.use(express.urlencoded({extended: true}));
     app.use(bodyParser.json());
     //passando o app para tudo que for controllers
     consign()
