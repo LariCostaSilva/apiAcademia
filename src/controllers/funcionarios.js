@@ -1,5 +1,8 @@
 /*------------CONTROLE DE ROTAS-----------*/
 
+const FuncionariosDAO = require('../DAO/FuncionariosDAO')
+const Funcionarios = require('../models/funcionarios')
+
 //exportando a rota
 module.exports = app => {
     // TESTE recebido e enviado 
@@ -11,6 +14,5 @@ module.exports = app => {
         console.log(req.body)
         res.send('Rota Post')
     })
-
-
 }
+
