@@ -9,10 +9,10 @@ A API foi construídas para fins didáticos, como fechamento do Módulo 4 da Res
 ## Ferramentas presentes no trabalho:
 
 <!--ts-->
-   * [SQLite](#SQLite)
-   * [JavaScript com Node.Js](#Node.Js)
-   * [Express](#Express)
-   * [Heroku](#Heroku)
+   * SQLite
+   * Node.Js
+   * Express
+   * Heroku
    
    
 ## Rotas da API:
