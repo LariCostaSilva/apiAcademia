@@ -24,3 +24,49 @@ A API foi construídas para fins didáticos, como fechamento do Módulo 4 da Res
 | **POST** | `/api/funcionarios` | Entrada de novo funcionario |
 | **PATCH** | `/api/funcionarios/{id}` | Alterações por {id} |
 | **DELETE** | `/api/funcionarios/{id}` | Deleção de funcionários {id} |
+
+## Dependências Gerais:
+```js
+ "dependencies": {
+    "body-parser": "^1.19.0",
+    "consign": "^0.1.6",
+    "express": "^4.17.1",
+    "sqlite3": "^5.0.2"
+  }
+```
+
+## Dependências Dev:
+
+```
+"devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+  ```
+  
+  ## Home Page:
+  
+  https://github.com/LariCostaSilva/apiAcademia
+  
+  ## Instalação Necessária
+  
+  ```bash
+npm install
+```
+
+  ## Inicialização do Terminal
+  
+   ```bash
+npm start
+```
+
+## Group 09
+
+- [Larissa Silva](https://github.com/LariCostaSilva)
+- [Murilo Mininel](https://github.com/MuriloMininel) 
+- [Nathalie Moreira](https://github.com/NathalieMS) 
+- [yasmin Reis](https://github.com/yasminreisk)
+
+## Author
+
+- [Larissa Silva](https://github.com/LariCostaSilva)
+
