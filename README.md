@@ -4,7 +4,7 @@
 
 ### Sobre a API:
 
-A API foi construídas para fins didáticos, como fechamento do Módulo 4 da Resilia Educação, demonstraremos em 4 setores diferentes como aplicá-la de maneira escálavel e vendável. Para que o esse projeto Back End fosse construído utilizamos os conceitos de organização MVC, bem como o banco de dados SQL. Buscando além dos conhecimentos adquiridos em aula, fortalecer nossa base através do curso de Node.Js da Alura.
+A API foi construídas para fins didáticos, como fechamento do Módulo 4 da Resilia Educação, demonstraremos em 4 setores diferentes como aplicá-la de maneira escálavel e vendável. Para que esse projeto Back End fosse construído utilizamos os conceitos de organização MVC, bem como o banco de dados SQL. Buscando além dos conhecimentos adquiridos em aula, fortalecer nossa base através do curso de Node.Js da Alura.
 
 ## Ferramentas presentes no trabalho:
 
