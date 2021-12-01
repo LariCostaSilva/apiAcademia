@@ -47,13 +47,13 @@ A API foi construídas para fins didáticos, como fechamento do Módulo 4 da Res
   
   https://github.com/LariCostaSilva/apiAcademia
   
-  ## Instalação Necessária
+  ## Instalação Necessária:
   
   ```bash
 npm install
 ```
 
-  ## Inicialização do Terminal
+  ## Inicialização do Terminal:
   
    ```bash
 npm start
