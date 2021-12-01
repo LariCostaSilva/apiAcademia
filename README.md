@@ -59,14 +59,14 @@ npm install
 npm start
 ```
 
-## Group 09
+## Group 09:
 
 - [Larissa Silva](https://github.com/LariCostaSilva)
 - [Murilo Mininel](https://github.com/MuriloMininel) 
 - [Nathalie Moreira](https://github.com/NathalieMS) 
 - [Yasmin Reis](https://github.com/yasminreisk)
 
-## Autora
+## Autora:
 
 - [Larissa Silva](https://github.com/LariCostaSilva)
 
