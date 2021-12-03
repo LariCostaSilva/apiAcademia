@@ -12,7 +12,6 @@ A API foi construídas para fins didáticos, como fechamento do Módulo 4 da Res
    * SQLite
    * Node.Js
    * Express
-   * Heroku
    
    
 ## Rotas da API:
