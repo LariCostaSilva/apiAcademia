@@ -18,12 +18,16 @@ class Funcionarios{
 
     _validaEmail(email){
 
-        if(email.value.indexOf("@") == -1 || email.valueOf (".") == -1){
+        if(email.indexOf("@") == -1 || email.valueOf (".") == -1){
+
+        throw new Error ("E-mail inválido, insira corretamente os dados")
         } else{
-            throw new Error ("E-mail inválido, insira corretamente os dados")
+
+            return email
+           
         }
     }
 }
 
 
-module.exports = Funcionarios
+module.exports= Funcionarios

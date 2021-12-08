@@ -1,41 +1,40 @@
-const funcionarios = require("../controllers/funcionarios")
 
 class FuncionariosDAO {
     constructor(bd) {
         this.bd = bd
     }
-
-    //CREATE
-    lista(novaEntrada) {
-        const INSERT_ENTRADA = ` ( ID, NOME, EMAIL, ENDERECO, NUM, BAIRRO, CIDADE, UF, CEP, TELEFONE, TURMA, SALARIO, CONTRATACAO, CARGO, OBSERVACOES)
+     //CREATE
+     insereFuncionario(novoFuncionario){
+        const INSERT_FUNCIONARIOS = `
+        INSERT INTO FUNCIONARIOS
+            ( NOME, EMAIL, ENDERECO, NUM, BAIRRO, CIDADE, UF, CEP, TELEFONE, TURMA, SALARIO, CONTRATACAO, CARGO, OBSERVACOES)
         VALUES
-            (?,?,?,?,?)
+            (?,?,?,?,?,?,?,?,?,?,?,?,?,?)
         `
-        return new Promise((resolve, reject) => {
-            this.bd.run(INSERT_ENTRADA, [...Object.values(novaEntrada)], (error) => {
-                if (error) {
+        console.log(novoFuncionario)
+        return new Promise((resolve, reject)=>{
+            this.bd.run(INSERT_FUNCIONARIOS, [...Object.values(novoFuncionario)], (error)=>{
+                if(error){
                     reject({
-                        "mensagem": error.message,
-                        "erro": true
+                        "mensagem" : error.message,
+                        "erro" : true 
                     })
-                }
-                else {
+                } else {
                     resolve({
-                        "requisicao": novaEntrada,
-                        "erro": false
+                        "requisicao" : novoFuncionario,
+                        "erro" : false 
                     })
                 }
             })
         })
-
     }
+
+
 
     //READ PEGA TUDO
     postaTudo() {
-        const SELECT_ALL_FUNCIONARIOS = `
-        SELECT * FROM FUNCIONARIOS`
         return new Promise((resolve, reject) => {
-            this.bd.all(SELECT_ALL_FUNCIONARIOS, (error, rows) => {
+            this.bd.all('SELECT * FROM FUNCIONARIOS', (error, rows) => {
                 if (error) {
                     reject({
                         "mensagem": error.message,
@@ -55,7 +54,7 @@ class FuncionariosDAO {
 
     posta(id) {
         const SELECT_BY_ID = `
-        SELECT * FROM TAREFAS
+        SELECT * FROM FUNCIONARIOS
         WHERE ID = ?`
         return new Promise((resolve, reject) => {
             this.bd.all(SELECT_BY_ID, id, (error, rows) => {
@@ -73,7 +72,7 @@ class FuncionariosDAO {
             })
         })
     }
-
+   
 
     //UPDATE
 
@@ -124,7 +123,7 @@ class FuncionariosDAO {
                     })
                 })
             } else {
-                throw new Error(`Tarefa de id ${id} não existe`)
+                throw new Error(`Entrada de id ${id} não existe`)
             }
         } catch (error) {
             throw new Error(error.message)
